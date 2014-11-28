@@ -1,4 +1,3 @@
-rps-ruby-javascript
-===================
+SUPERHERO VS SUPERHERO
+======================
 
-Shell for starting JavaScript Rock Paper Scissors with completed example in Ruby
