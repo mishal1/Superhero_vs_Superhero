@@ -1,0 +1,116 @@
+<html>
+  <title>GAMETIME!</title>
+  <link rel="icon" href="favicon.ico" type="images/favicon.ico" />
+  <head>
+
+  <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+  <style>
+
+    body {
+      font-family: 'Oswald';
+      margin: 15px 0 0 30px;
+      background-image: url(images/background.gif);
+      margin: 50px 0 0 30px;
+    }
+
+    .choices img {
+      width: 15%;
+      margin-right: 2.5%;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: 0.3s all ease;
+      width: 300px;
+      height: 200px;
+      border-style: solid;
+      border-color: #000000;
+    }
+    
+    .choices img:hover {
+      opacity: 1;
+    }
+
+    h1 {
+      font-family: 'Passion One';
+      background: #000000;
+      color: #FFFFFF;
+      font-size: 50px;
+      border-radius: 8px;
+      padding: 5px;
+      width: 50%;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    #results li {
+      background: #000000;
+      color: #FFFFFF;
+      font-size: 18px;
+      border-radius: 8px;
+      padding: 5px;
+      width: 30%;
+      margin-bottom: 10px;
+      display: none;
+    } 
+
+    .button {
+      display: inline-block;
+      width: 110px;
+      cursor: pointer;
+      font-size: 14px;
+      background-color: #000000;
+      border: 2px solid white;
+      color: white;
+      padding: 5px 5px;
+      text-align: center;
+      border-radius: 4px;
+      margin-left: 5px;
+      margin-right: 5px;
+      text-shadow: 0 0 2px rgba(0,0,0,0.4);
+      margin-bottom: 10px
+    }
+
+    .button:hover {
+
+    }
+
+  </style>
+  
+
+  </head>
+  
+  <body>
+  <center>
+    <h1>SUPERHERO vs SUPERHERO</h1>
+    <a href='/rules' id='rules' class='button'>RULES</a>
+    <br>
+    <div class='choices'>
+      <img src="images/black_widow.jpg" data-pick='Black Widow'>
+      <img src="images/hulk.jpg" data-pick='Hulk'>
+      <img src="images/Iron_man.jpg" data-pick='Iron Man'>
+      <img src="images/spiderman.jpg" data-pick='Spiderman'>
+      <img src="images/thor.jpg" data-pick='Thor'>
+    </div>
+    <ul id="results"></ul>
+   </center>
+
+    <script src='javascript/game.js'></script>
+    <script src='javascript/player.js'></script>
+    <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js'></script>
+
+    <template id='list-item-template'>
+      <li> {{ message }} </li>
+    </template>
+
+    <script src='javascript/application.js'></script>
+
+  </body>
+</html>
+
+
+
