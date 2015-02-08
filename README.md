@@ -9,12 +9,15 @@ Deployed on Heroku: https://limitless-wildwood-5139.herokuapp.com/
 ##Learning Objectives
 - Javascript
 - Testing javascript
+- jQuery
+- Mustache
+- UI
 
 ##Technology Used
 - Javascript
 - Jasmine
 - Sinatra
-- JQuery
+- jQuery
 - HTML
 - CSS
 - Heroku
